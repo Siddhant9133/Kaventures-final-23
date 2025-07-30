@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAVentures - Luxury Residential Interiors</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="residential.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-yellow-500 font-[Neon_Tubes_2]">KAVentures</h1>
+      <button id="menu-toggle" class="hamburger md:hidden focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+        <span class="w-6 h-0.5 bg-yellow-500 mb-1"></span>
+        <span class="w-6 h-0.5 bg-yellow-500 mb-1"></span>
+        <span class="w-6 h-0.5 bg-yellow-500"></span>
+      </button>
+      <nav id="nav-menu" class="hidden md:flex space-x-6">
+        <a href="index.html" class="nav-item text-lg hover:text-yellow-500">Home</a>
+        <a href="project.html" class="nav-item text-lg hover:text-yellow-500">Projects</a>
+        <a href="about.html" class="nav-item text-lg hover:text-yellow-500">About Us</a>
+        <a href="contact.html" class="nav-item text-lg hover:text-yellow-500">Contact</a>
+      </nav>
+      <nav id="mobile-nav" class="fixed top-0 right-0 h-full w-64 bg-gray-800 transform translate-x-full transition-transform duration-300 md:hidden hidden">
+        <div class="flex flex-col space-y-4 p-6">
+          <a href="index.html" class="nav-item text-lg hover:text-yellow-500">Home</a>
+          <a href="project.html" class="nav-item text-lg hover:text-yellow-500">Projects</a>
+          <a href="about.html" class="nav-item text-lg hover:text-yellow-500">About Us</a>
+          <a href="contact.html" class="nav-item text-lg hover:text-yellow-500">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div class="galaxy-bg"></div>
+      <canvas id="galaxy-canvas" class="galaxy-canvas"></canvas>
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="section-title text-4xl md:text-5xl font-bold mb-4">Luxury Residential Interiors</h2>
+        <p class="section-subtitle text-lg md:text-xl mb-8">Transform your home with bespoke designs that blend elegance, comfort, and innovation.</p>
+        <a href="#contact" class="btn inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg md:py-3 md:px-6">Get a Consultation</a>
+      </div>
+    </section>
+
+    <section id="projects" class="py-12 md:py-16 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <div class="zigzag-container">
+          <div class="zigzag-item mb-12 md:mb-16" data-section="bedroom">
+            <div class="design-card-wrapper md:flex items-center">
+              <div class="design-card md:w-1/2">
+                <div class="card-inner">
+                  <img src="interior/bedroom/IMAGE 6.jpg" alt="Bedroom" class="w-full h-64 object-cover">
+                  <div class="card-content p-4 md:p-6">
+                    <h3 class="card-title text-xl md:text-2xl font-bold mb-2">Bedroom Bliss</h3>
+                    <p class="text-gray-300 card-description">A serene escape with plush textures, warm ambient lighting, and a minimalist palette for ultimate relaxation.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2 p-4 md:p-6">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Bedroom Design</h3>
+                <p class="text-gray-300 mb-4">Crafted to be your personal sanctuary, our bedrooms blend elegance with comfort, using soft hues and custom layouts tailored to your lifestyle.</p>
+                <a href="bedroom.html" class="btn inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg">Explore Bedroom Designs</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="zigzag-item mb-12 md:mb-16" data-section="bathroom">
+            <div class="design-card-wrapper md:flex flex-row-reverse items-center">
+              <div class="design-card md:w-1/2">
+                <div class="card-inner">
+                  <img src="interior/bathroom/image 1.jpg" alt="Bathroom" class="w-full h-64 object-cover">
+                  <div class="card-content p-4 md:p-6">
+                    <h3 class="card-title text-xl md:text-2xl font-bold mb-2">Bathroom Serenity</h3>
+                    <p class="text-gray-300 card-description">Spa-like luxury with sleek marble finishes, smart fixtures, and tranquil lighting for a rejuvenating retreat.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2 p-4 md:p-6">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Bathroom Design</h3>
+                <p class="text-gray-300 mb-4">Transform your daily routine with innovative, elegant bathrooms designed for relaxation and functionality.</p>
+                <a href="bathroom.html" class="btn inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg">Explore Bathroom Designs</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="zigzag-item mb-12 md:mb-16" data-section="hall">
+            <div class="design-card-wrapper md:flex items-center">
+              <div class="design-card md:w-1/2">
+                <div class="card-inner">
+                  <img src="interior/hall/IMAGE 1.jpg" alt="Hall" class="w-full h-64 object-cover">
+                  <div class="card-content p-4 md:p-6">
+                    <h3 class="card-title text-xl md:text-2xl font-bold mb-2">Hall Harmony</h3>
+                    <p class="text-gray-300 card-description">Spacious and inviting, with open layouts, bold accents, and natural light for memorable gatherings.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2 p-4 md:p-6">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Hall Design</h3>
+                <p class="text-gray-300 mb-4">Our halls are designed for connection, balancing style and versatility for family life and entertaining.</p>
+                <a href="Hall.html" class="btn inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg">Explore Hall Designs</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="zigzag-item mb-12 md:mb-16" data-section="kitchen">
+            <div class="design-card-wrapper md:flex flex-row-reverse items-center">
+              <div class="design-card md:w-1/2">
+                <div class="card-inner">
+                  <img src="interior/kitchen/IMAGE 2.jpg" alt="Kitchen" class="w-full h-64 object-cover">
+                  <div class="card-content p-4 md:p-6">
+                    <h3 class="card-title text-xl md:text-2xl font-bold mb-2">Kitchen Craft</h3>
+                    <p class="text-gray-300 card-description">A culinary haven with smart storage, premium appliances, and sleek designs for inspired cooking.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2 p-4 md:p-6">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Kitchen Design</h3>
+                <p class="text-gray-300 mb-4">Elevate your culinary experience with kitchens that combine cutting-edge design and practical elegance.</p>
+                <a href="kitchen.html" class="btn inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg">Explore Kitchen Designs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-12 md:py-16 bg-gray-800 text-center">
+      <div class="container mx-auto px-4">
+        <h2 class="section-title text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Space?</h2>
+        <p class="section-subtitle text-lg md:text-xl mb-8">Partner with KAVentures to create interiors that reflect your unique style and elevate your lifestyle.</p>
+        <a href="#contact" class="btn inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg md:py-3 md:px-6">Schedule a Consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-yellow-500">KAVentures</h3>
+          <p class="text-gray-300">Crafting timeless interiors with innovation and elegance.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-yellow-500">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
+            <li><a href="#projects" class="hover:text-yellow-500">Projects</a></li>
+            <li><a href="#about" class="hover:text-yellow-500">About Us</a></li>
+            <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-yellow-500">Connect With Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-yellow-500">Facebook</a>
+            <a href="#" class="hover:text-yellow-500">Twitter</a>
+            <a href="#" class="hover:text-yellow-500">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-300">
+        <p>&copy; 2025 KAVentures. All rights reserved.</p>
+        <a href="#home" class="hover:text-yellow-500">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="residential.js"></script>
+</body>
+</html>

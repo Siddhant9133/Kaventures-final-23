@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAVentures - About Us</title>
+    <link rel="stylesheet" href="about style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="fixed top-0 left-0 w-full z-50 floating-nav">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-white animate-glow">KAVentures</a>
+            <button id="menu-toggle" class="hamburger-btn">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="space-x-8">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="project.html" class="nav-item">Projects</a></li>
+                <li><a href="about.html" class="nav-item active">About</a></li>
+                <li><a href="contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section relative">
+            <canvas id="particle-canvas" class="absolute inset-0"></canvas>
+            <div class="container mx-auto px-4 py-20 text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 glitch" data-text="About KAVentures">About KAVentures</h1>
+                <p class="text-lg text-white leading-relaxed max-w-2xl mx-auto animate-slide-in">
+                    We craft spaces that spark inspiration, weaving innovation with timeless elegance.
+                </p>
+            </div>
+            <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#F9FAFB" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,181.3C480,181,600,203,720,224C840,245,960,267,1080,245.3C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            </svg>
+        </section>
+
+        <section id="about" class="py-16 bg-gray-50 section-transition">
+            <div class="container mx-auto px-4">
+                <h2 class="section-heading text-3xl md:text-4xl font-extrabold text-navy-900 text-center mb-12 reveal">Meet Our Team</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="about-image-container md:w-1/2 reveal">
+                        <div class="image-3d-wrapper">
+                            <img src="kav1.png" alt="Team Member at Desk" class="w-full rounded-lg shadow-lg image-border">
+                        </div>
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="about-text md:w-1/2 reveal">
+                        <p class="text-lg text-navy-900 leading-relaxed">
+                            KAVentures is a collective of dreamers and builders. As a new company, we’re dedicated to crafting spaces that resonate with beauty, purpose, and sustainability, transforming how people experience their environments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 section-transition">
+            <div class="container mx-auto px-4">
+                <h2 class="section-heading text-3xl md:text-4xl font-extrabold text-navy-900 text-center mb-12 reveal">Our Journey</h2>
+                <div class="constellation reveal">
+                    <canvas id="constellation-canvas" class="w-full h-96"></canvas>
+                    <div class="constellation-point" style="top: 20%; left: 15%;">
+                        <div class="constellation-label">
+                            <h3 class="text-lg font-semibold text-navy-900">2024</h3>
+                            <p class="text-navy-900">Founded KAVentures with a vision to redefine design.</p>
+                        </div>
+                    </div>
+                    <div class="constellation-point" style="top: 70%; left: 30%;">
+                        <div class="constellation-label">
+                            <h3 class="text-lg font-semibold text-navy-900"></h3>
+                            <p class="text-navy-900">Completed our first project, bringing our vision to life.</p>
+                        </div>
+                    </div>
+                    <div class="constellation-point" style="top: 30%; left: 60%;">
+                        <div class="constellation-label">
+                            <h3 class="text-lg font-semibold text-navy-900"></h3>
+                            <p class="text-navy-900"> Include more design talent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50 section-transition">
+            <div class="container mx-auto px-4">
+                <h2 class="section-heading text-3xl md:text-4xl font-extrabold text-navy-900 text-center mb-12 reveal">Our Approach</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="floating-card reveal">
+                        <div class="card">
+                            <h3 class="text-2xl font-semibold text-navy-900 mb-4">Collaboration</h3>
+                            <p class="text-navy-900">We co-create with you, ensuring your vision shines through in every detail.</p>
+                        </div>
+                    </div>
+                    <div class="floating-card reveal">
+                        <div class="card">
+                            <h3 class="text-2xl font-semibold text-navy-900 mb-4">Innovation</h3>
+                            <p class="text-navy-900">We push boundaries with cutting-edge tools and creative solutions.</p>
+                        </div>
+                    </div>
+                    <div class="floating-card reveal">
+                        <div class="card">
+                            <h3 class="text-2xl font-semibold text-navy-900 mb-4">Sustainability</h3>
+                            <p class="text-navy-900">We design with the planet in mind, using eco-friendly practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 section-transition why-choose-section relative">
+            <div class="container mx-auto px-4">
+                <h2 class="section-heading text-3xl md:text-4xl font-extrabold text-navy-900 text-center mb-12 reveal animate-glow">Why Choose KAVentures?</h2>
+                <div class="about-content reveal">
+                    <p class="text-lg text-navy-900 leading-relaxed text-center max-w-3xl mx-auto">
+                        KAVentures is your partner in creating spaces that inspire and endure. We blend creativity, expertise, and sustainability to deliver environments that are as unique as you are.
+                    </p>
+                </div>
+            </div>
+            <canvas id="background-glow" class="absolute inset-0 z-0"></canvas>
+        </section>
+    </main>
+
+    <footer class="bg-navy-900 py-8 relative">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-white mb-4">© 2025 KAVentures. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gold-400 hover:text-gold-500 transition-transform transform hover:scale-110 animate-glow">Facebook</a>
+                <a href="#" class="text-gold-400 hover:text-gold-500 transition-transform transform hover:scale-110 animate-glow">Twitter</a>
+                <a href="#" class="text-gold-400 hover:text-gold-500 transition-transform transform hover:scale-110 animate-glow">Instagram</a>
+            </div>
+            <a href="#" class="block mt-4 text-gold-400 hover:text-gold-500 transition-transform transform hover:scale-110 animate-glow">Back to Top</a>
+        </div>
+        <svg class="wave-footer" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#F9FAFB" fill-opacity="1" d="M0,160L60,170.7C120,181,240,203,360,186.7C480,171,600,117,720,96C840,75,960,85,1080,106.7C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+        </svg>
+    </footer>
+
+    <script src="about script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bedroom Design - KAVentures</title>
+  <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bathroom.css">
+</head>
+<body class="relative bg-[#0a0e1c]">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl sm:text-3xl font-['Neon_Tubes_2'] text-[#ffaa00]">KAVentures</a>
+      <button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="nav-menu" class="hidden md:flex space-x-4">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="project.html" class="nav-item">Projects</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+      <nav id="mobile-nav" class="hidden md:hidden fixed top-0 right-0 h-full w-64 bg-[#0a0e1c]/95 flex flex-col items-center pt-20 space-y-4 transition-transform duration-300 transform translate-x-full">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[40vh] sm:h-[80vh] flex items-center justify-center overflow-hidden">
+    <div class="galaxy-bg"></div>
+    <canvas id="galaxy-canvas" class="galaxy-canvas"></canvas>
+    <div class="relative z-10 text-center px-4 sm:px-6">
+      <h1 class="section-title hero-title">Bathroom Designs</h1>
+      <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto animate-[fadeIn_1.5s_ease-out]">
+        Immerse yourself in serene elegance with our curated bathroom designs, crafted for ultimate comfort and style.
+      </p>
+    </div>
+  </section>
+
+  <!-- Zigzag Section -->
+  <section class="container mx-auto px-4 sm:px-6 py-16">
+    <h2 class="section-title">Explore Our Bathroom Designs</h2>
+    <div class="space-y-12 sm:space-y-16">
+      <!-- Item 1: Image Left, Text Right -->
+      <div class="zigzag-item flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+        <div class="w-full sm:w-1/2">
+          <img src="interior/bathroom/image 4.jpg" alt="Minimalist Bedroom" class="zigzag-image">
+        </div>
+        <div class="w-full sm:w-1/2 text-center sm:text-left">
+          <h3 class="zigzag-title">Minimalist Haven</h3>
+          <p class="zigzag-description">Sleek lines and neutral tones create a tranquil, clutter-free retreat for relaxation in your bathroom.</p>
+        </div>
+      </div>
+      <!-- Item 2: Text Left, Image Right -->
+      <div class="zigzag-item flex flex-col sm:flex-row-reverse items-center gap-6 sm:gap-8">
+        <div class="w-full sm:w-1/2">
+          <img src="interior/bathroom/image 3.jpg" alt="Cozy Bedroom" class="zigzag-image">
+        </div>
+        <div class="w-full sm:w-1/2 text-center sm:text-right">
+          <h3 class="zigzag-title">Cozy Retreat</h3>
+          <p class="zigzag-description">Warm textures and soft lighting craft an inviting space for rejuvenation in your bathroom</p>
+        </div>
+      </div>
+      <!-- Item 3: Image Left, Text Right -->
+      <div class="zigzag-item flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+        <div class="w-full sm:w-1/2">
+          <img src="interior/bathroom/image 2.jpg" alt="Luxury Bedroom" class="zigzag-image">
+        </div>
+        <div class="w-full sm:w-1/2 text-center sm:text-left">
+          <h3 class="zigzag-title">Luxury Suite</h3>
+          <p class="zigzag-description">Opulent materials and ambient lighting elevate your bathroom to a lavish sanctuary.</p>
+        </div>
+      </div>
+      <!-- Item 4: Text Left, Image Right -->
+      <div class="zigzag-item flex flex-col sm:flex-row-reverse items-center gap-6 sm:gap-8">
+        <div class="w-full sm:w-1/2">
+          <img src="interior/bathroom/image 1.jpg" alt="Modern Bedroom" class="zigzag-image">
+        </div>
+        <div class="w-full sm:w-1/2 text-center sm:text-right">
+          <h3 class="zigzag-title">Modern Elegance</h3>
+          <p class="zigzag-description">Sleek design with curated decor for a sophisticated yet comfortable bathroom escape.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0a0e1c]/95 py-8">
+    <div class="container mx-auto px-4 sm:px-6 text-center">
+      <p class="text-gray-300 text-sm">© 2025 KAVentures. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="text-gray-300 hover:text-[#ffaa00] transition-colors">Facebook</a>
+        <a href="#" class="text-gray-300 hover:text-[#ffaa00] transition-colors">Twitter</a>
+        <a href="#" class="text-gray-300 hover:text-[#ffaa00] transition-colors">Instagram</a>
+      </div>
+      <a href="#top" class="block mt-4 text-[#ffaa00] hover:underline">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="bathroom.js"></script>
+</body>
+</html>

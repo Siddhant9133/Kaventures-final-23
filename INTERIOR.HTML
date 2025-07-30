@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAVentures - Interior Design</title>
+  <link href="https://fonts.cdnfonts.com/css/neon-tubes" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="INTERIOR.css">
+</head>
+<body class="min-h-screen text-white font-['Inter'] bg-gradient-to-br from-[#0a0e1c] to-[#1a2333] overflow-x-hidden">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#0a0e1c]/95 backdrop-blur-md transition-all">
+    <nav class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-[#ffaa00] font-['Neon_Tubes_2']">KAVentures</h1>
+      <button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-expanded="false">
+        <span class="hamburger block w-8 h-0.5 bg-white relative transition-all">
+          <span class="absolute block w-8 h-0.5 bg-white -top-2.5 transition-all"></span>
+          <span class="absolute block w-8 h-0.5 bg-white top-2.5 transition-all"></span>
+        </span>
+      </button>
+      <ul id="nav-menu" class="hidden md:flex space-x-6 sm:space-x-8 text-lg font-['Neon_Tubes_2']">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="project.html" class="nav-item">Projects</a></li>
+        <li><a href="about.html" class="nav-item active">About</a></li>
+        <li><a href="contact" class="nav-item">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-nav" class="hidden md:hidden bg-[#0a0e1c]/95 backdrop-blur-md flex-col items-center py-6 fixed top-0 right-0 h-full w-4/5 max-w-xs z-40 transition-transform duration-300 translate-x-full">
+      <ul class="flex flex-col items-center space-y-6 text-lg font-['Neon_Tubes_2']">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="projects.html" class="nav-item">Projects</a></li>
+        <li><a href="about.html" class="nav-item active">Interior Design</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Interior Design Section -->
+  <section id="interior-design" class="relative min-h-screen pt-24 pb-16 flex items-center">
+    <div class="galaxy-bg absolute inset-0 z-0"></div>
+    <canvas id="galaxy-canvas" class="galaxy-canvas absolute inset-0 z-[2] opacity-85"></canvas>
+    <div class="container mx-auto px-4 sm:px-6 relative z-10">
+      <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl font-['Neon_Tubes_2'] text-center text-white mb-12">Interior Design Showcase</h2>
+      <div class="design-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <a href="residential.html" class="design-card">
+          <div class="card-inner">
+            <img src="interior/bedroom/IMAGE 6.jpg" alt="Modern Interior" class="card-image w-full h-48 sm:h-56 object-cover">
+            <div class="card-content p-4 sm:p-6">
+              <h3 class="card-title text-lg sm:text-xl font-['Neon_Tubes_2'] text-[#ffaa00] mb-3">Resedential</h3>
+              <p class="card-description text-gray-300 text-sm sm:text-base">Modern elegance with clean lines, neutral tones, and soft textures for a tranquil, restful retreat</p>
+            </div>
+          </div>
+        </a>
+        <a href="office.html" class="design-card">
+          <div class="card-inner">
+            <img src="interior/office/IMAGE 2.jpg" alt="Rustic Interior" class="card-image w-full h-48 sm:h-56 object-cover">
+            <div class="card-content p-4 sm:p-6">
+              <h3 class="card-title text-lg sm:text-xl font-['Neon_Tubes_2'] text-[#ffaa00] mb-3">Commericial </h3>
+              <p class="card-description text-gray-300 text-sm sm:text-base">Functional sophistication with ergonomic furniture and warm wood accents for enhanced productivity</p>
+            </div>
+          </div>
+        </a>
+        <a href="" class="design-card">
+          <div class="card-inner">
+            <img src="interior/hospital/IMAGE 1.jpg" alt="Luxury Interior" class="card-image w-full h-48 sm:h-56 object-cover">
+            <div class="card-content p-4 sm:p-6">
+              <h3 class="card-title text-lg sm:text-xl font-['Neon_Tubes_2'] text-[#ffaa00] mb-3">healthcare </h3>
+              <p class="card-description text-gray-300 text-sm sm:text-base">Opulent materials and intricate details define a lavish, high-end experience.</p>
+            </div>
+          </div>
+        </a>
+        <a href="" class="design-card">
+          <div class="card-inner">
+            <img src="interior/educational/IMAGE 3.jpg" alt="Boho Interior" class="card-image w-full h-48 sm:h-56 object-cover">
+            <div class="card-content p-4 sm:p-6">
+              <h3 class="card-title text-lg sm:text-xl font-['Neon_Tubes_2'] text-[#ffaa00] mb-3">Educational</h3>
+              <p class="card-description text-gray-300 text-sm sm:text-base">Calming and efficient design with soothing colors and intuitive layouts to support healing environments.</p>
+            </div>
+          </div>
+        </a>
+       
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section bg-[#0a0e1c]/90 py-8">
+    <div class="container mx-auto px-4 sm:px-6 text-center">
+      <p class="footer-text text-gray-400 mb-4">© 2025 KAVentures. All rights reserved.</p>
+      <div class="social-links flex justify-center space-x-6 mb-4">
+        <a href="#" class="social-link text-[#ffaa00] hover:text-[#ff6f00] transition">Facebook</a>
+        <a href="#" class="social-link text-[#ffaa00] hover:text-[#ff6f00] transition">Twitter</a>
+        <a href="#" class="social-link text-[#ffaa00] hover:text-[#ff6f00] transition">Instagram</a>
+      </div>
+      <a href="#interior-design" class="back-to-top text-[#ffaa00] hover:text-[#ff6f00] hover:underline transition">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="INTERIOR.js"></script>
+</body>
+</html>
